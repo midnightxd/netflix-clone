@@ -100,3 +100,21 @@
   font-size: 14px;
   margin-top: 20px;
 }
+
+@media (max-width: 760px) {
+  .featured {
+  }
+  
+  .featured--name {
+    font-size: 50px;
+  }
+
+  .featured--info {
+    font-size: 16px;
+  }
+
+  .featured--overview {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}

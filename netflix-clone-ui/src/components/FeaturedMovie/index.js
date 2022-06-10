@@ -10,6 +10,11 @@ export default ({item}) => {
     geners.push( item.genres[i].name );
   }
 
+  let overview = item.overview;
+  if(overview.length > 300){
+    overview = overview.substring(0, 300) + '...';
+  }
+
   return (
     <section className="featured" style={{
       backgroundSize: 'cover',
@@ -24,7 +29,7 @@ export default ({item}) => {
             <div className="featured--year">{firstDate.getFullYear()}</div>
             <div className="featured--seasons">{item.number_of_seasons} season{item.number_of_seasons !== 1 ? 's' : '' }</div>
           </div>
-          <div className="featured--overview">{item.overview}</div>
+          <div className="featured--overview">{overview}</div>
           <div className="featured--buttons">
             <a href={`/watch/${item.id}`} className="featured--watchbutton"><span>▶</span> Watch</a>
             <a href={`/list/add/${item.id}`} className="featured--addbutton"><span>✚</span> Save</a>
