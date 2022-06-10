@@ -11,7 +11,7 @@ export default ({show}) => {
         </a>
       </div>
       <div className="header--user">
-        <a href="/">
+        <a target="_blank" href="https://github.com/midnightxd">
           <img src="https://avatars.githubusercontent.com/u/100091816?s=400&u=1ca6fd3e5ee6215047c75ddb0c09a46c904ae2e9&v=4" alt="User Logo" />
         </a>
       </div>
